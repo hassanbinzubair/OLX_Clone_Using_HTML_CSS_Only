@@ -49,12 +49,6 @@ nav {
   background-position: center;
   cursor: pointer;
 }
-@media (max-width: 500px) {
-  .banner-motors,
-  .banner-property {
-    display: none;
-  }
-}
 .nav2 {
   display: flex;
   align-items: center;
@@ -82,12 +76,14 @@ nav {
 }
 .search {
   height: 45px;
-  width: 750px;
+  max-width: 700px;
+  width: 80vw;
   border: 1px solid;
   border-radius: 7px 0px 0px 7px;
   display: flex;
   align-items: center;
 }
+
 .search-btn {
   background-color: #002f34;
   border: 1px solid #002f34;
@@ -101,6 +97,7 @@ nav {
 }
 .search-text {
   color: white;
+  font-weight: 700;
 }
 .category-banner {
   display: flex;
@@ -123,22 +120,6 @@ nav {
   background-repeat: no-repeat;
   margin: auto;
   margin-top: 30px;
-}
-@media (max-width: 1280px) {
-  .banner-ad {
-    background-size: 100%;
-  }
-}
-@media (max-width: 1280px) {
-  .cb {
-    display: none;
-  }
-  .search {
-    border-radius: 7px;
-  }
-  .search-btn {
-    border-radius: 7px;
-  }
 }
 .category-text {
   width: 120px;
@@ -200,14 +181,18 @@ nav {
   padding-bottom: 5px;
 }
 .ad-inline {
-  height: 400px;
+  height: 300px;
   width: 70vw;
   border: 1px solid gray;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  background-image: url(/images/Hassan\ Raza\ -\ Coder\ and\ Developer.png);
+  background-image: url(images/Hassan-Raza-Coder-and-Developer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: max(100%, 1160px);
 }
+
 .download-app {
   background-color: #f7f8f9;
   height: 280px;
@@ -225,11 +210,6 @@ nav {
 }
 .download-app-text2 {
   color: #3a77ff;
-}
-@media (max-width: 1000px) {
-  .download-app-text {
-    display: none;
-  }
 }
 .category-footer {
   display: flex;
@@ -307,9 +287,7 @@ nav {
 .sell {
   font-weight: 700;
 }
-.search-text {
-  font-weight: 700;
-}
+
 .all-cb {
   font-weight: 700;
   cursor: pointer;
@@ -339,10 +317,95 @@ nav {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #3F7AFF;
+  background-color: #3f7aff;
 }
 /* Scrollbar's Track */
-::-webkit-scrollbar-track-piece{
+::-webkit-scrollbar-track-piece {
+  background-color: #ebf1ff;
+}
 
-background-color:#EBF1FF ;
+@media (max-width: 670px) {
+  .search {
+    width: 60vw;
+  }
+}
+@media (max-width: 350px) {
+  .search {
+    display: none;
+  }
+  .search-btn {
+    display: none;
+  }
+  .category-section {
+    gap: 25px;
+  }
+}
+@media (max-width: 1280px) {
+  .banner-ad {
+    background-size: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  .cb {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .download-app-text {
+    display: none;
+  }
+  .banner-ad {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .location {
+    display: none;
+  }
+  .ad-inline {
+    height: 180px;
+    background-position: center left;
+    background-size: max(100%, 450px);
+    background-repeat: repeat;
+  }
+}
+@media (max-width: 335px) {
+  .cs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 830px) {
+  .card {
+    flex-direction: row;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+  }
+  .cards {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .banner-motors,
+  .banner-property {
+    display: none;
+  }
+  .card-img {
+    height: 150px;
+    width: 150px;
+  }
+  .card {
+    height: 180px;
+    width: 95vw;
+  }
+  .cards {
+    width: 95vw;
+  }
+  .product-address {
+    display: none;
+  }
 }

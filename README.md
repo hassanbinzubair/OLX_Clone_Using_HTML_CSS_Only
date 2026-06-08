@@ -23,18 +23,6 @@ Check out the live deployment of the project here:
 
 ---
 
-## 📂 Project Structure
-
-```text
-OLX_Clone_Using_HTML_CSS_Only/
-│
-├── index.html          # Main HTML entry point
-├── style.css           # Core stylesheet containing all layout and component styles
-└── README.md           # Project documentation
-```
-
----
-
 ## 👤 Contact
 
 **Hassan Bin Zubair**
